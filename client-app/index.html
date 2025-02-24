@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Leaves</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Employee Leaves</h1>
+
+    <div class="filter-section">
+      <label for="employeeId">Employee ID:</label>
+      <input type="string" id="employeeId" placeholder="Enter Employee ID" />
+
+      <label for="statusFilter">Status:</label>
+      <select id="statusFilter">
+        <option value="">All Statuses</option>
+        <option value="inprogress">In Progress</option>
+        <option value="cancelled">Cancelled</option>
+        <option value="ended">Ended</option>
+      </select>
+
+      <button id="fetchLeavesBtn">Fetch Leaves</button>
+    </div>
+
+    <div id="leaves-container">
+      <h2>Leaves:</h2>
+      <ul id="leaves-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

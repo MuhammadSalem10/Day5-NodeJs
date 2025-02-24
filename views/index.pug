@@ -1,0 +1,25 @@
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Employee Management System
+    link(rel="stylesheet", href="/css/styles.css")
+  body
+    nav.navbar
+      h1 Employee Management System
+
+    .container
+      h2 Employee List
+      .employees-grid
+        each employee in employees
+          .employee-card
+            .employee-info
+              h3= employee.name
+              p.email= employee.email
+              p.department= employee.department
+              if employee.salary
+                p.salary= `$${employee.salary}`
+
+  

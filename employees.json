@@ -1,0 +1,49 @@
+[
+  {
+    "id": 2,
+    "name": "Amr",
+    "email": "amr@gmail.com",
+    "salary": 10000,
+    "department": "IT",
+    "level": "Jr",
+    "yearsOfExperience": 0
+  },
+  {
+    "id": 3,
+    "name": "Amr",
+    "email": "amr@gmail.com",
+    "salary": 10000,
+    "department": "IT",
+    "level": "Jr",
+    "yearsOfExperience": 0
+  },
+  {
+    "id": 4,
+    "name": "Mohamed",
+    "email": "amr@gmail.com",
+    "salary": 3000,
+    "department": "IT",
+    "level": "Jr",
+    "yearsOfExperience": 0
+  },
+  {
+    "id": 5,
+    "name": "salem",
+    "email": "salem@gmail.com",
+    "salary": 3000,
+    "department": "computer",
+    "level": "Jr",
+    "yearsOfExperience": 44,
+    "updatedAt": "2025-02-22T12:51:55.227Z"
+  },
+  {
+    "id": "6",
+    "name": "sss",
+    "email": "sss@gmail.com",
+    "salary": 444,
+    "department": "computer",
+    "level": "Jr",
+    "yearsOfExperience": 44,
+    "updatedAt": "2025-02-22T13:35:25.342Z"
+  }
+]

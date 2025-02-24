@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-section label {
+    margin-right: 5px;
+}
+
+#leaves-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#leaves-list li {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-bottom: 1px dotted #eee;
+}
+
+#leaves-list li:last-child {
+    border-bottom: none;
+}
