@@ -63,8 +63,6 @@ router.post("/login", async (req, res) => {
       return res.status(401).json({ message: "Invalid username or password" });
     }
 
-    console.log("EMPO", employee);
-
     const token = jwt.sign({ empId: employee._id }, process.env.SECRET_KEY, {
       expiresIn: "1h",
     });

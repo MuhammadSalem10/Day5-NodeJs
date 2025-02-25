@@ -63,6 +63,14 @@ router.get("/employees", async (req, res) => {
 
 router.delete("/employees/:id", authenticateToken, async (req, res) => {
   const empId = req.params.id;
+
+  const requestedEmpId = req.params.id; 
+  const loggedInEmpId = req.empId;      
+
+  if (parseInt(requestedEmpId) !== loggedInEmpId) { 
+      return res.status(403).json({ message: 'Unauthorized to access this employee data' }); 
+  }
+
   try {
     const deletedEmployee = await Employee.findOneAndDelete({ _id: empId });
     if (!deletedEmployee) {
@@ -143,7 +151,7 @@ router.get("/employees/:id/leaves", authenticateToken, async (req, res) => {
   }
 });
 
-router.patch("/leave/:id", async (req, res) => {
+router.patch("/leave/:id", authenticateToken, async (req, res) => {
   const leaveId = req.params.id;
   const updates = req.body;
 
